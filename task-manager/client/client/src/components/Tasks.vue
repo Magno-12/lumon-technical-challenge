@@ -23,11 +23,15 @@
           <tbody>
             <tr v-for="(task, index) in tasks" :key="index">
               <td>{{ task.title }}</td>
+              <td>{{ task.description }}</td>
+              <td>{{ task.priority }}</td>
               <td>{{ task.author }}</td>
+              <td>{{ task.worker }}</td>
               <td>
                 <span v-if="task.completed">Yes</span>
                 <span v-else>No</span>
               </td>
+              <td>{{ task.tags }}</td>
               <td>
                 <div class="btn-group" role="group">
                   <button
@@ -151,16 +155,6 @@
                           placeholder="Enter description">
             </b-form-input>
           </b-form-group>
-          <b-form-group id="form-task-edit-group"
-                      label="Task:"
-                      label-for="form-task-edit-input">
-            <b-form-input id="form-task-edit-input"
-                          type="text"
-                          v-model="editForm.task"
-                          required
-                          placeholder="Enter task">
-            </b-form-input>
-          </b-form-group>
           <b-form-group id="form-priority-edit-group"
                       label="Priority:"
                       label-for="form-priority-edit-input">
@@ -193,7 +187,7 @@
           </b-form-group>
         <b-form-group id="form-completed-edit-group">
           <b-form-checkbox-group v-model="editForm.completed" id="form-checks">
-            <b-form-checkbox value="true">Read?</b-form-checkbox>
+            <b-form-checkbox value="true">Completed?</b-form-checkbox>
           </b-form-checkbox-group>
         </b-form-group>
         <b-button-group>

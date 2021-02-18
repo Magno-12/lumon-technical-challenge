@@ -50,7 +50,7 @@ CORS(app, resources={r'/*': {'origins': '*'}})
 
 def remove_task(task_id):
     for task in TASKS:
-        if task['id'] == book_id:
+        if task['id'] == task_id:
             TASKS.remove(task)
             return True
     return False
