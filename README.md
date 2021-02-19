@@ -41,19 +41,23 @@ Para correr el proyecto se deben seguir los suguientes pasos:
 
     1. instalar flask: pip install Flask==1.1.2 Flask-Cors==3.0.10
     2. instalar vue: npm install -g @vue/cli@4.5.11
-    3. clonar el repositorio de github del proyecto: https://github.com/Magno-12/lumon-technical-challenge.git   
-    4. ejecutar flask del lado del servidor:
-            4.1. ir a la carpeta server desde la terminal: $ cd server
-            4.2. instalar la maquina virtual con el comando: $ python3.9 -m venv env
-            4.3. activar la maquina virtual: $ source env/bin/activate
-            4.4. dentro de la maquina virtual utilizar el comando: (env)$ python app.py
+    3. $ npm install axios@0.21.1 --save
+    4. $ npm install bootstrap@4.6.0 --save
+    5. npm run serve
+    6. $ npm install bootstrap-vue@2.21.2 --save
+    7. clonar el repositorio de github del proyecto: https://github.com/Magno-12/lumon-technical-challenge.git   
+    8. ejecutar flask del lado del servidor:
+            8.1. ir a la carpeta server desde la terminal: $ cd server
+            8.2. instalar la maquina virtual con el comando: $ python3.9 -m venv env
+            8.3. activar la maquina virtual: $ source env/bin/activate
+            8.4. dentro de la maquina virtual utilizar el comando: (env)$ python app.py
             
             navegar con http://localhost:5000
             
-    5. ejecutar Vuejs del lado del cliente en una terminal diferente:
-            5.1. ir a la carpeta client: cd client
-            5.2. utilizar el comando: npm install
-            5.3. correr el servidor: npm run serve
+    9. ejecutar Vuejs del lado del cliente en una terminal diferente:
+            9.1. ir a la carpeta client: cd client
+            9.2. utilizar el comando: npm install
+            9.3. correr el servidor: npm run serve 
             
             navegar con http://localhost:8080
           
